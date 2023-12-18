@@ -1,0 +1,66 @@
+[Running] python -u "c:\MONG\Projects\kkp_test\quiz_sum_index_finding\run_method2_smart_check.py"
+
+test_case_1
+input: [1, 2, 5, 9, 10, 13]  target: 24  limit: 6  max_pointers_if_brute_force: 30
+pointer1: index=(1,1) score=1 < target
+pointer2: index=(1,2) score=3 < target
+pointer3: index=(1,3) score=8 < target
+pointer4: index=(1,4) score=17 < target
+pointer5: index=(1,5) score=27 > target
+pointer6: index=(2,5) score=26 > target
+pointer7: index=(3,5) score=24 = target
+output: (3, 5)
+
+test_case_2
+input: [1, 5, 10, 13, 15]  target: 17  limit: 5  max_pointers_if_brute_force: 20
+pointer1: index=(1,1) score=1 < target
+pointer2: index=(1,2) score=6 < target
+pointer3: index=(1,3) score=16 < target
+pointer4: index=(1,4) score=29 > target
+pointer5: index=(2,4) score=28 > target
+pointer6: index=(3,4) score=23 > target
+pointer7: index=(4,4) score=13 < target
+pointer8: index=(4,5) score=28 > target
+pointer9: index=(5,5) score=15 < target
+output: None
+
+test_case_3
+input: [1, 2, 3, 5, 10, 20, 21, 30]  target: 51  limit: 8  max_pointers_if_brute_force: 56
+pointer1: index=(1,1) score=1 < target
+pointer2: index=(1,2) score=3 < target
+pointer3: index=(1,3) score=6 < target
+pointer4: index=(1,4) score=11 < target
+pointer5: index=(1,5) score=21 < target
+pointer6: index=(1,6) score=41 < target
+pointer7: index=(1,7) score=62 > target
+pointer8: index=(2,7) score=61 > target
+pointer9: index=(3,7) score=59 > target
+pointer10: index=(4,7) score=56 > target
+pointer11: index=(5,7) score=51 = target
+output: (5, 7)
+
+test_case_4
+input: [1, 8, 9, 13, 15, 16, 22, 23]  target: 38  limit: 8  max_pointers_if_brute_force: 56
+pointer1: index=(1,1) score=1 < target
+pointer2: index=(1,2) score=9 < target
+pointer3: index=(1,3) score=18 < target
+pointer4: index=(1,4) score=31 < target
+pointer5: index=(1,5) score=46 > target
+pointer6: index=(2,5) score=45 > target
+pointer7: index=(3,5) score=37 < target
+pointer8: index=(3,6) score=53 > target
+pointer9: index=(4,6) score=44 > target
+pointer10: index=(5,6) score=31 < target
+pointer11: index=(5,7) score=53 > target
+pointer12: index=(6,7) score=38 = target
+output: (6, 7)
+
+test_case_5
+input: [1, 3, 4, 6]  target: 15  limit: 4  max_pointers_if_brute_force: 12
+pointer1: index=(1,1) score=1 < target
+pointer2: index=(1,2) score=4 < target
+pointer3: index=(1,3) score=8 < target
+pointer4: index=(1,4) score=14 < target
+output: None
+
+[Done] exited with code=0 in 0.115 seconds
